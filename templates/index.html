@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Query Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Query Interface</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="code">Paste your code:</label>
+                <textarea name="code" id="code" rows="10" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="query">Enter your query:</label>
+                <textarea name="query" id="query" rows="3" required></textarea>
+            </div>
+            <button type="submit">Process</button>
+        </form>
+    </div>
+</body>
+</html> 

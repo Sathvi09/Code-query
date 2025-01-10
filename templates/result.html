@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Query Results</h1>
+        <div class="result-section">
+            <h2>Original Code:</h2>
+            <pre><code>{{ original_code }}</code></pre>
+        </div>
+        <div class="result-section">
+            <h2>Query:</h2>
+            <pre>{{ query }}</pre>
+        </div>
+        <div class="result-section">
+            <h2>Modified Code:</h2>
+            <pre><code>{{ modified_code }}</code></pre>
+        </div>
+        <div class="execution-time"></div>
+            <p>Execution Time: {{ execution_time }} seconds</p>
+        </div>
+        <a href="/" class="button">Try Another Query</a>
+    </div>
+</body>
+</html> 
